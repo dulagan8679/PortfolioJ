@@ -1,0 +1,219 @@
+:root {
+  --primary-color: #212529;
+  --secondary-color: white;
+  --tertiary-color: #ffc107;
+  --accent-color: rgb(240, 12, 91);
+}
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.responsive-image {
+  max-width: 100%; /* Ensures the image adjusts to the container width */
+  height: auto;    /* Maintains aspect ratio */
+}
+
+.header{
+  color:var(--secondary-color);
+  overflow-y: auto;
+  width:300px;
+  position:fixed;
+  padding: 0 15px;
+}
+
+.profile-img {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100%; /* Adjust if necessary for container height */
+}
+
+.profile-img img {
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Same as width */
+  object-fit: cover; /* Ensures the image doesn't stretch */
+  border-radius: 50%; /* Makes it a circle */
+  border: 2px solid #fff; /* Optional: Adds a border */
+}
+
+
+.logo h1{
+  font-size:24px;
+  margin:0;
+}
+
+.header .logo{
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  color:white;
+}
+
+.header .social-links{
+  margin: 0 0 20px 0;
+}
+
+.header .social-links a{
+  display:inline-flex;
+  align-items:center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  color:var(--default-color);
+  margin:0 2px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.header .social-links a:hover{
+  color:var(--contast-color);
+  background:var(--accent-color);
+
+}
+.navmenu a .navicon,
+.navmenu a:focus .navicon{
+  font-size: 20px;
+  margin-right: 10px;
+}
+.navmenu .nav-link.active{
+  color:var(--tertiarys-color);
+}
+.navmenu .nav-link:hover{
+  color:var(--accent-color);
+
+}
+.navmenu{
+  padding:0;
+  z-index: 9997;
+  font-size: 20px;
+  margin-right: 10px;
+  color: gainsboro;
+}
+.navmenu ul{
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+.navmenu li{
+  color:rgb(18, 200, 45);
+}
+
+.services .service-item {
+  position: relative;
+}
+
+.services .service-item .icon {
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid var(--accent-color);
+  margin-right: 20px;
+}
+
+#services {
+  margin-left: 300px;
+  padding: 50px 20px;
+  background-color: #f234;
+  min-height: 100vh;
+  margin-top: 25px;
+}
+
+#services .section-title {
+  margin-bottom: 30px;
+}
+
+#services .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive typography for small screens */
+@media (max-width: 767px) {
+  #services .section-title h2 {
+      font-size: 2rem;
+  }
+
+  #services .section-title p {
+      font-size: 1rem;
+  }
+
+  .card-body {
+      padding: 1.5rem;
+  }
+}
+
+.accordion-button.small-btn {
+  padding: 0.1rem 0.3rem; 
+  font-size: 0.875rem; 
+}
+
+.testimonial-slide {
+  display: flex; 
+  align-items:right; 
+  justify-content: right; 
+  max-width: 600px; 
+  margin: auto; 
+  padding: 20px; 
+  border: 1px solid #dee2e6; 
+  border-radius: 5px; 
+  background-color: #f8f9fa; 
+  text-align: center; 
+}
+
+.testimonial {
+  display: none;
+  padding: 20px; 
+  font-size: 1.2em; 
+  color: #333; 
+  margin-left:50px;
+  transition: opacity 0.9s ease; 
+}
+
+.testimonial.active {
+  display: block; 
+}
+
+
+
+
+
